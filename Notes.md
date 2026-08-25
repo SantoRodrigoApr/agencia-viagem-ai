@@ -17,9 +17,21 @@ Create Quarkus project:
 ### Additional Extensions:
 - quarkus-langchain4j-easy-rag
 
-# Model Applicatoin Sample:
+# Model Application Sample:
 
 ***Command (Question):***
+
+```shell script
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: Jane Smith" -d "Por favor, cancele a reserva 67890." http://localhost:8080/travel
+```
+
+```shell script
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: John Doe" -d "Cancele a reserva 67890." http://localhost:8080/travel
+```
+
+```shell script
+curl -X POST -H "Content-Type: text/plain" -H "X-User-Name: John Doe" -d "Quais sao as viagens de aventura?" http://localhost:8080/travel
+```
 
 ```shell script
 curl -X POST -H "Content-Type text/plain" -d "Por favor cancele minha reserva 67890. Meu ultimo nome e Smith." http://localhost:8080/travel
