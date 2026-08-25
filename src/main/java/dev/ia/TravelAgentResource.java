@@ -13,14 +13,14 @@ import java.awt.*;
 public class TravelAgentResource {
 
     @Inject
-    TravelAgentAssistant agentAssistant;
+    PackageExpert expert;
 
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.TEXT_PLAIN)
     public String ask(String question) {
-        return agentAssistant.chat(
-//                "session-123",
+        return expert.chat(
+                "session-123",
                 question
         );
     }

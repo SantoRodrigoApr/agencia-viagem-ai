@@ -20,10 +20,14 @@ Create Quarkus project:
 # Model Applicatoin Sample:
 
 ***Command (Question):***
+
+```shell script
+curl -X POST -H "Content-Type text/plain" -d "Por favor cancele minha reserva 67890. Meu ultimo nome e Smith." http://localhost:8080/travel
+```
+
 ```shell script
 curl -X POST -H "Content-type: text/plain" -d "Qual a politica de cancelamento para o pacote Aventura Amazonica?" http://localhost:8080/travel
 ```
-
 
 ```shell script
 curl -X POST -H "Content-Type: text/plain" -d "Estou planejando uma viagem para o Japao. Qual a melhor epoca do ano para visitar e porque? Resposta em portugues" http://localhost:8080/travel
