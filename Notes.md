@@ -14,15 +14,28 @@ Create Quarkus project:
  - nomic-embed-text:v1.5
  - nomic-embed-test:latest
 
+### Additional Extensions:
+- quarkus-langchain4j-easy-rag
+
 # Model Applicatoin Sample:
 
 ***Command (Question):***
+```shell script
+curl -X POST -H "Content-type: text/plain" -d "Qual a politica de cancelamento para o pacote Aventura Amazonica?" http://localhost:8080/travel
+```
+
 
 ```shell script
 curl -X POST -H "Content-Type: text/plain" -d "Estou planejando uma viagem para o Japao. Qual a melhor epoca do ano para visitar e porque? Resposta em portugues" http://localhost:8080/travel
 ```
 
 ***Answer:***
+
+## 2. Qual a politica de cancelamento para o pacote Aventura Amazonica?
+A política de cancelamento do Pacote **Aventura Amazônica** prevê um reembolso de **80%** se o cancelamento for feito com **30 dias de antecedência**.
+
+
+## 1. Estou planejando uma viagem para o Japao. Qual a melhor epoca do ano para visitar e porque? Resposta em portugues
 ### Qual a melhor época do ano para visitar o Japão?
 Em geral, **a primavera (final de março a início de abril) e o outono (final de setembro a início de novembro)** são consideradas as melhores épocas para explorar o Japão. Cada estação tem suas particularidades, mas ambas combinam clima agradável, paisagens incríveis e uma variedade de eventos culturais.
 
