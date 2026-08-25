@@ -1,4 +1,4 @@
-# agencia-viagem-ai
+# agencia-viagem-ai-service-ollama
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
